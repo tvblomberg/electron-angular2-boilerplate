@@ -27,8 +27,22 @@
     <md-tab>
         <template md-tab-label>Code</template>
         <template md-tab-content>
-            <h1>Some more tab content</h1>
-            <p>...</p>
+            <md-tab-group>
+                <md-tab>
+                    <template md-tab-label>HTML</template>
+                    <template md-tab-content></template>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>TS</template>
+                    <template md-tab-content>
+                        <codemirror [(ngModel)]="tsCode" [config]="tsConfig"></codemirror>
+                    </template>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>CSS</template>
+                    <template md-tab-content></template>
+                </md-tab>
+            </md-tab-group>
         </template>
     </md-tab>
 </md-tab-group>

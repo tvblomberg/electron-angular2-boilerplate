@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+import { CodemirrorModule } from 'ng2-codemirror';
+
 /* Material Design - Because why not? */
 import { MaterialModule } from '@angular/material';
 
@@ -13,6 +15,7 @@ import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   imports: [
+    CodemirrorModule,
     BrowserModule,
     MaterialModule.forRoot(),
     FormsModule,
