@@ -1,0 +1,127 @@
+body {
+  margin: 0 !important;
+}
+
+.side-nav {
+    padding: 0px;
+}
+
+.side-nav li {
+    float: none;
+    line-height: 48px;
+}
+ul li {
+    list-style-type: none;
+}
+
+.side-nav .subheader:hover {
+    background-color: transparent;
+}
+
+.side-nav .divider {
+    margin: 8px 0 0 0;
+}
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.side-nav a:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.side-nav .subheader {
+    cursor: initial;
+    pointer-events: none;
+    color: rgba(0,0,0,0.54);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.side-nav a {
+    color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+}
+a {
+    text-decoration: none;
+}
+
+md-sidenav-layout.m2app-dark {
+  background: black;
+}
+
+.app-content {
+  /*padding: 20px;*/
+}
+
+.app-content md-card {
+  margin: 20px;
+}
+
+.app-sidenav {
+  min-width: 300px;
+}
+
+.app-content md-checkbox {
+  margin: 10px;
+}
+
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+
+.app-toolbar-menu {
+  padding: 0 14px 0 14px;
+  color: white;
+}
+
+.app-icon-button {
+  box-shadow: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-spinner {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+.app-input-icon {
+  font-size: 16px;
+}
+
+.app-list {
+  border: 1px solid rgba(0,0,0,0.12);
+  width: 350px;
+  margin: 20px;
+}
+
+.app-progress {
+  margin: 20px;
+}

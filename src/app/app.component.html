@@ -1,3 +1,27 @@
-<main>
-  <h1>{{title}}</h1>
-</main>
+<md-sidenav-layout>
+
+  <md-sidenav #sidenav mode="side" class="app-sidenav">
+    <ul class="side-nav">
+      <li>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="subheader">Examples</a></li>
+      <li><a routerLink="/notifications">Notification</a></li>
+    </ul>
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <button class="app-icon-button" (click)="sidenav.toggle()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button> {{title}}
+    <span class="app-toolbar-filler"></span>
+  </md-toolbar>
+
+  <div class="app-content">
+    <router-outlet></router-outlet>
+  </div>
+
+</md-sidenav-layout>
