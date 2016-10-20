@@ -1,0 +1,13 @@
+<input type="text" [(ngModel)]="test" />
+<br />
+{{test}}
+
+Canadian Translator: <input type="text" [(ngModel)]="canadianSpeak" />
+Translation: {{canadianSpeak | paulass}}
+
+<h2 *ngIf="test==='greg'">You have found greg!</h2>
+<h2 *ngIf="isLink()">You have found link!</h2>
+
+<div *ngFor="let l of gregs"> 
+    <gregfoodandstuff [greg]="l"></gregfoodandstuff>
+</div>

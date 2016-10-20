@@ -9,12 +9,17 @@ import { NotificationsComponent } from './examples/examples-notifications.compon
 import { ProjectComponent } from './project/project.component';
 import { CameraComponent } from './project/camera.component';
 import { PdfComponent } from './project/pdf.component';
+import { TestComponent } from './project/test.component';
+import { GregComponent } from './project/greg.component';
 
 /* 3rd Party Modules */
 import { CodemirrorModule } from 'ng2-codemirror';
 /* Material Design - Because why not? */
 import { MaterialModule } from '@angular/material';
 import { HttpModule } from '@angular/http';
+
+/* Pipes */
+import { GregPipe } from './shared/pipes/greg.pipe';
 
 /* Services */
 import { RenderService } from './shared/services/render.service';
@@ -31,7 +36,8 @@ import { RenderService } from './shared/services/render.service';
       { path: 'home', component: ProjectComponent },
       { path: 'notifications', component: NotificationsComponent },
       { path: 'camera', component: CameraComponent },
-      { path: 'pdf', component: PdfComponent }
+      { path: 'pdf', component: PdfComponent },
+      { path: 'greg', component: TestComponent }
     ]),
     HttpModule
   ],
@@ -40,7 +46,10 @@ import { RenderService } from './shared/services/render.service';
     NotificationsComponent,
     ProjectComponent,
     CameraComponent,
-    PdfComponent
+    PdfComponent,
+    TestComponent,
+    GregPipe,
+    GregComponent
   ],
   providers: [
     RenderService
