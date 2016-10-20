@@ -8,3 +8,13 @@ npm install
 npm run build --prod
 npm start
 ```
+
+#Problems To Solve
+```
+Node controlling windows service
+Self hosted Web API
+
+
+```
+
+#Ideas
