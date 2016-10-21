@@ -16,7 +16,7 @@ export class RenderService {
         let self = this;
         this.ipc.on('wrote-pdf', function (event: any, path: any) {
             const message = `Wrote PDF to: ${path}`;
-            console.log(message);
+            
             self.printFinished.emit({
                 message: message
             });

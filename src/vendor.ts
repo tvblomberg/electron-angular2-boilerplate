@@ -12,6 +12,7 @@ import 'codemirror/theme/dracula.css';
 import 'codemirror';
 import 'codemirror/mode/javascript/javascript.js';
 import 'ng2-codemirror';
+import 'moment';
 
 // RxJS
 import 'rxjs';

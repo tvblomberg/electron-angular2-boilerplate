@@ -1,0 +1,10 @@
+<md-card>
+    <md-card-subtitle>{{subTitle}}</md-card-subtitle>
+	<md-card-title>{{counter | timer}}</md-card-title>
+	<md-card-actions>
+		<button (click)="toggle()" md-button>
+            <span *ngIf="!running">Start</span>
+            <span *ngIf="running">Pause</span>
+        </button>
+	</md-card-actions>
+</md-card>

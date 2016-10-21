@@ -11,6 +11,7 @@ import { CameraComponent } from './project/camera.component';
 import { PdfComponent } from './project/pdf.component';
 import { TestComponent } from './project/test.component';
 import { GregComponent } from './project/greg.component';
+import { MeetingComponent, TimerComponent } from './meeting';
 
 /* 3rd Party Modules */
 import { CodemirrorModule } from 'ng2-codemirror';
@@ -20,6 +21,7 @@ import { HttpModule } from '@angular/http';
 
 /* Pipes */
 import { GregPipe } from './shared/pipes/greg.pipe';
+import { TimerPipe } from './shared/pipes/timer.pipe';
 
 /* Services */
 import { RenderService } from './shared/services/render.service';
@@ -32,8 +34,8 @@ import { RenderService } from './shared/services/render.service';
     MaterialModule.forRoot(),
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProjectComponent },
-      { path: 'home', component: ProjectComponent },
+      { path: '', component: MeetingComponent },
+      { path: 'home', component: MeetingComponent },
       { path: 'notifications', component: NotificationsComponent },
       { path: 'camera', component: CameraComponent },
       { path: 'pdf', component: PdfComponent },
@@ -49,7 +51,10 @@ import { RenderService } from './shared/services/render.service';
     PdfComponent,
     TestComponent,
     GregPipe,
-    GregComponent
+    GregComponent,
+    MeetingComponent,
+    TimerComponent,
+    TimerPipe
   ],
   providers: [
     RenderService

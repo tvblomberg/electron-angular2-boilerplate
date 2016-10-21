@@ -1,0 +1,26 @@
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div>
+	<div class="row">
+		<div class="col s12 m6">
+			<md-input placeholder="Topic" name="topic" [(ngModel)]="topic"></md-input>
+		</div>
+		<div class="col s12 m6">
+			<md-input placeholder="Topic Length" name="length" [(ngModel)]="length"></md-input>
+		</div>
+	</div>
+	<md-grid-list cols="12" [style.background]="'darkslateblue'">
+		<md-grid-tile>
+			<timer [subtitle]="'Meeting'" [minutes]="length" [directionS]="'Down'"></timer>
+            			<timer [subtitle]="'Tangents'" [minutes]="length" [directionS]="'Up'"></timer>
+		</md-grid-tile>
+	</md-grid-list>
+	<div class="row">
+		<div class="col s12 m6">
+			<md-input placeholder="Meeting Notes" name="notes" [(ngModel)]="notes"></md-input>
+		</div>
+		<div class="col s12 m6">
+			<md-input placeholder="Tangents" name="tangents" [(ngModel)]="tangents"></md-input>
+		</div>
+	</div>
+</div>

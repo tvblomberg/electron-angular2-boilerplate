@@ -1,0 +1,25 @@
+body {
+  color: red;
+  margin: 0 !important;
+}
+
+.title {
+  font-weight: bold;  
+}
+
+.time-allotted {
+  font-style: italic;
+}
+
+#agenda {
+  opacity: 1;
+}
+
+.center {
+  margin: 0 auto;
+  width: 250px;
+}
+
+.timers {
+  float: right;
+}
