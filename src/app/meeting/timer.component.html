@@ -1,10 +1,18 @@
-<md-card>
-    <md-card-subtitle>{{subTitle}}</md-card-subtitle>
-	<md-card-title>{{counter | timer}}</md-card-title>
-	<md-card-actions>
-		<button (click)="toggle()" md-button>
-            <span *ngIf="!running">Start</span>
-            <span *ngIf="running">Pause</span>
-        </button>
-	</md-card-actions>
-</md-card>
+<div [class.panel-play]="running" [class.panel-start]="!initialized && !running" [class.panel-stop]="!running && initialized" class="panel">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-xs-3">
+                <a role="button" (click)="toggle()">
+                    <i [class.fa-pause]="running" [class.fa-play]="!running && initialized" [class.fa-clock-o]="!initialized && !running" class="fa fa-5x"></i>
+                </a>
+			</div>
+			<div class="col-xs-9 text-right">
+				<div class="huge">{{counter | timer}}</div>
+			</div>
+		</div>
+	</div>
+    <div class="panel-footer">
+        <span class="pull-left">{{subTitle}}</span>
+        <div class="clearfix"></div>
+    </div>
+</div>

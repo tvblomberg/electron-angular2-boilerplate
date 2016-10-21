@@ -1,6 +1,8 @@
-.sebm-google-map-container {
-  height: 300px;
+.md-toolbar.md-primary {
+    background: darkslateblue !important;
+    color: hsla(0,0%,100%,.87);
 }
+
 
 .md-sidenav-content {
   min-height: 1200px;

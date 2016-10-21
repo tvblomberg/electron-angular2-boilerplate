@@ -1,46 +1,63 @@
-output {
-  align-items: center;
-  background: black;
-  display: flex;
-  font: 8vw/1 "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  justify-content: center;
+.huge {
+  font-size: 40px;
 }
 
-.clip-text {
-  background-image: url(http://loginbeta.korweb.com/assets/images/login_bg.png);
-  font-weight: bold;
-  position: relative;
-  margin: .01em;
-  padding: .01em .01em;
-  text-align: center;
-  color: black;
-  user-select: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.timer {
+    padding-top: 20px;
 }
 
-.clip-text:before,
-.clip-text:after {
-  position: absolute;
-  content: "";
+/* While Running */
+.panel-play > .panel-heading {
+    border-color: #2DB87C;
+    color: white;
+    background-color: #2DB87C;
 }
 
-.clip-text:before {
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: inherit;
+.panel-play a {
+    color: white;
 }
 
-.clip-text:after {
-  position: absolute;
-  z-index: -1;
-  top: .125em;
-  right: .125em;
-  bottom: .125em;
-  left: .125em;
-  background-color: #000;
+.panel-play {
+    border-color: #2DB87C;
+}
+
+.panel-play > a {
+    color: #2DB87C;
+}
+
+/* On Start */
+.panel-start > .panel-heading {
+    border-color: #683AB7;
+    color: white;
+    background-color: #683AB7;
+}
+
+.panel-start a {
+    color: white;
+}
+
+.panel-start {
+    border-color: #683AB7
+}
+
+.panel-start > a {
+    color: #683AB7;
+}
+/* On Stop */
+.panel-stop > .panel-heading {
+    border-color: #FF553F;
+    color: white;
+    background-color: #FF553F;
+}
+
+.panel-stop a {
+    color: white;
+}
+
+.panel-stop {
+    border-color: #FF553F
+}
+
+.panel-stop > a {
+    color: #FF553F;
 }
