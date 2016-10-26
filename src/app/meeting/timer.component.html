@@ -1,4 +1,4 @@
-<div [class.panel-play]="running" [class.panel-start]="!initialized && !running" [class.panel-stop]="!running && initialized" class="panel">
+<div [class.panel-play]="running" [class.panel-start]="!initialized && !running && directionS == 'Down'" [class.panel-stop]="!running && initialized" [class.panel-tangent]="!initialized && !running && directionS == 'Up'" class="panel">
 	<div class="panel-heading">
 		<div class="row">
 			<div class="col-xs-3">

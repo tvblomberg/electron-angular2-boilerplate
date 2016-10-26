@@ -3,7 +3,6 @@
     color: hsla(0,0%,100%,.87);
 }
 
-
 .md-sidenav-content {
   min-height: 1200px;
 }
@@ -68,7 +67,7 @@ md-sidenav-layout.m2app-dark {
 }
 
 .app-content md-card {
-  margin: 20px;
+  margin: 30px;
 }
 
 .app-sidenav {

@@ -8,11 +8,33 @@ import { Component, OnInit } from '@angular/core';
 export class MeetingComponent implements OnInit {
     public topic: string;
     public length: number;
-    public tangents: any;
-    public notes: any;
+    public tangentNotes: any = [];
+    public meetingNotes: any = [];
+    public meetingNote: string = "";
+    public tangentNote: string = "";
     constructor() { }
 
     ngOnInit() { 
+    }
+
+    public createTangentNote() {
+        this.tangentNotes.push({
+            topic: this.topic,
+            note: this.tangentNote,
+            date: new Date()
+        });
+
+        this.tangentNote = "";
+    }
+
+    public createMeetingNote() {
+        this.meetingNotes.push({
+            topic: this.topic,
+            note: this.meetingNote,
+            date: new Date()
+        });
+
+        this.meetingNote = "";
     }
 }
 

@@ -61,3 +61,22 @@
 .panel-stop > a {
     color: #FF553F;
 }
+
+.panel-tangent > .panel-heading {
+    border-color: #FF943F;
+    color: white;
+    background-color: #FF943F;
+}
+
+.panel-tangent a {
+    color: white;
+}
+
+.panel-tangent {
+    border-color: #FF943F
+}
+
+.panel-tangent > a {
+    color: #FF943F;
+}
+
