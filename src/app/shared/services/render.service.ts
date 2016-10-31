@@ -22,4 +22,8 @@ export class RenderService {
             });
         });
     }
+
+    public online(online: string) {
+        this.ipc.send('online', online);
+    }
 }

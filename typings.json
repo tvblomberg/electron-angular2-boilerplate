@@ -3,6 +3,7 @@
     "core-js": "registry:dt/core-js#0.0.0+20160725163759",
     "electron/github-electron": "registry:dt/electron/github-electron#1.4.3+20161013090743",
     "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "lovefield": "registry:dt/lovefield#2.0.62+20160625232231",
     "node": "registry:dt/node#6.0.0+20160909174046"
   }
 }

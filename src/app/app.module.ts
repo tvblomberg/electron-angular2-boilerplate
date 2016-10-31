@@ -11,6 +11,7 @@ import { CameraComponent } from './project/camera.component';
 import { PdfComponent } from './project/pdf.component';
 import { TestComponent } from './project/test.component';
 import { GregComponent } from './project/greg.component';
+import { BreakOutComponent } from './breakout/breakout.component';
 import { MeetingComponent, TimerComponent } from './meeting';
 
 /* 3rd Party Modules */
@@ -25,6 +26,7 @@ import { TimerPipe } from './shared/pipes/timer.pipe';
 
 /* Services */
 import { RenderService } from './shared/services/render.service';
+import { NotesService } from './shared/services/notes.service';
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { RenderService } from './shared/services/render.service';
       { path: 'notifications', component: NotificationsComponent },
       { path: 'camera', component: CameraComponent },
       { path: 'pdf', component: PdfComponent },
-      { path: 'greg', component: TestComponent }
+      { path: 'greg', component: TestComponent },
+      { path: 'break', component: BreakOutComponent }
     ]),
     HttpModule
   ],
@@ -54,10 +57,12 @@ import { RenderService } from './shared/services/render.service';
     GregComponent,
     MeetingComponent,
     TimerComponent,
-    TimerPipe
+    TimerPipe,
+    BreakOutComponent
   ],
   providers: [
-    RenderService
+    RenderService,
+    NotesService
   ],
   bootstrap: [ AppComponent ]
 })

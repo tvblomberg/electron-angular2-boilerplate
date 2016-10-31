@@ -65,12 +65,12 @@
                     </thead>
                     <tbody>
                         <tr *ngFor="let m of meetingNotes">
-                            <td>{{topic}}</td>
+                            <td>{{m.topic}}</td>
                             <td>
-                                {{m.note}}
+                                {{m.description}}
                             </td>
                             <td>
-                                <span style="float: right">{{m.date}}</span>
+                                <span style="float: right">{{m.creationdate}}</span>
                             </td>
                         </tr>
                     </tbody>
@@ -90,13 +90,13 @@
                     <tbody>
                         <tr *ngFor="let m of tangentNotes">
                             <td>
-                                {{topic}}
+                                {{m.topic}}
                             </td>
                             <td>
-                                {{m.note}}
+                                {{m.description}}
                             </td>
                             <td>
-                                <span style="float: right">{{m.date}}</span>
+                                <span style="float: right">{{m.creationdate}}</span>
                             </td>
                         </tr>
                     </tbody>

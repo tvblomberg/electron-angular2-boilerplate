@@ -7,9 +7,12 @@ const os = require('os');
 const path = require('path');
 const ipc = electron.ipcMain;
 const shell = electron.shell;
+const say = require('say');
 
 let mainWindow;
-
+let online = "ONLINE";
+say.speak("Application started Mr. Tommy");
+console.log(say);
 app.on('ready', () => {
     mainWindow = new BrowserWindow({
         width: 1000,
@@ -19,8 +22,19 @@ app.on('ready', () => {
         mainWindow.webContents.toggleDevTools();
     });
 
-    ipcMain.on('online-status-changed', (event, status) => {
-        console.log(status)
+    ipcMain.on('online', (event, status) => {
+        var changed = online.toUpperCase() !== status.toUpperCase() ? true : false;
+
+        if (changed) {
+            shell.beep();
+            if (status.toUpperCase() === "ONLINE") {
+                say.speak("Application has gone online");
+            } else {
+                say.speak("Application has gone offline");
+            }
+        }
+
+        online = status;
     });
 
     mainWindow.loadURL('file://' + __dirname + '/dist/index.html');

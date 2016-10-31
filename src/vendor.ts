@@ -10,9 +10,9 @@ import '@angular/material/core/theming/prebuilt/deeppurple-amber.css';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/dracula.css';
 import 'codemirror';
-import 'codemirror/mode/javascript/javascript.js';
 import 'ng2-codemirror';
 import 'ng2-bootstrap';
+import 'lovefield/dist/lovefield.min.js';
 
 // RxJS
 import 'rxjs';

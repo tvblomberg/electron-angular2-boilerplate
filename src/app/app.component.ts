@@ -1,5 +1,5 @@
 import { Component, ApplicationRef } from '@angular/core';
-
+import { RenderService } from './shared/services/render.service';
 @Component({
   selector: 'electron-app',
   templateUrl: './app.component.html',
@@ -10,7 +10,7 @@ export class AppComponent {
   public title: string = "Hello Angular Electron!";
   public online: string = "";
 
-  constructor(private appRef: ApplicationRef) {
+  constructor(private appRef: ApplicationRef, private renderService: RenderService) {
     
   }
   ngOnInit() {
@@ -25,6 +25,7 @@ export class AppComponent {
       }
 
       this.changeDetection();
+      this.renderService.online(this.online);
     }, 1000);
   }
 
